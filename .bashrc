@@ -90,8 +90,15 @@ if [ -x /usr/bin/dircolors ]; then
     alias aptup='sudo apt update && sudo apt upgrade'
     alias portz='nmap 127.0.0.1'
     alias df='df -h'
-    alias duck='java -jar duckencoder.jar'
+    alias duck='java -jar /home/bobby_boy49/ducky/encoder/duckencoder.jar'
     alias lanpass='sudo grep -r 'psk=' /etc/NetworkManager/system-connections/ | sed "s/\///g; s/:/: /g; s/psk=//g; s/.*ons//g; s/\.nmconnection//g"'
+    alias clear_history='> ~/.bash_history && history -c && gnome-terminal && exit'
+    alias stop-dlna='sudo systemctl stop minidlna'
+    alias convertwebm='find | grep ".webm" | sed "s/.webm//g" | xargs -I {} ffmpeg -fflags +genpts -i "{}.webm" -r 24 "{}.mp4"'
+    alias yt-720p='yt-dlp -f bv[height=720]+ba'
+    alias yt-1080p='yt-dlp -f bv[height=1080]+ba'
+    alias start-dlna='minidlnad'
+    alias pg='pager'
 fi
 
 # colored GCC warnings and errors
@@ -101,6 +108,7 @@ fi
 alias ll='exa'
 alias la='ls -a'
 alias l='ls -alF'
+alias lc='ls -a | wc -l'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
