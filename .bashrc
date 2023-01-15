@@ -99,6 +99,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias yt-640p='yt-dlp -f bv[height=640]+ba'
     alias yt-720p='yt-dlp -f bv[height=720]+ba'
     alias yt-1080p='yt-dlp -f bv[height=1080]+ba'
+    alias yt-1440p='yt-dlp -f bv[height=1440]+ba'
+    alias yt-2160p='yt-dlp -f bv[height=2160]+ba'
     alias start-dlna='minidlnad'
     alias pg='pager'
 fi
