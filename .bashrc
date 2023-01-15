@@ -96,6 +96,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias stop-dlna='sudo systemctl stop minidlna'
     alias convertwebm='find | grep ".webm" | sed "s/.webm//g" | xargs -I {} ffmpeg -fflags +genpts -i "{}.webm" -r 24 "{}.mp4"'
     alias update_bashrc='rm ~/.bashrc && cd ~/ && wget https://raw.githubusercontent.com/bobby-boy49/My-bashrc/main/.bashrc && gnome-terminal && exit'
+    alias yt-640p='yt-dlp -f bv[height=640]+ba'
     alias yt-720p='yt-dlp -f bv[height=720]+ba'
     alias yt-1080p='yt-dlp -f bv[height=1080]+ba'
     alias start-dlna='minidlnad'
