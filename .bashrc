@@ -88,6 +88,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
     alias aptup='sudo apt update && sudo apt upgrade'
+    alias sudo='doas'
     alias portz='nmap 127.0.0.1'
     alias df='df -h'
     alias duck='java -jar /home/bobby_boy49/ducky/encoder/duckencoder.jar'
