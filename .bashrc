@@ -91,7 +91,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias sudo='doas'
     alias portz='nmap 127.0.0.1'
     alias df='df -h'
-    alias duck='java -jar /home/bobby_boy49/ducky/encoder/duckencoder.jar'
+    alias duck='java -jar /home/$USER/ducky/encoder/duckencoder.jar'
     alias lanpass='sudo grep -r 'psk=' /etc/NetworkManager/system-connections/ | sed "s/\///g; s/:/: /g; s/psk=//g; s/.*ons//g; s/\.nmconnection//g"'
     alias clear_history='> ~/.bash_history && history -c && gnome-terminal && exit'
     alias stop-dlna='sudo systemctl stop minidlna'
